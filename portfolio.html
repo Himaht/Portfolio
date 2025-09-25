@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahima Yushawu | Portfolio</title>
+  <style>
+    /* ==== Base Styles ==== */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: #fdfdfd;
+      color: #444;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* ==== Header ==== */
+    header {
+      background: #4a6fa5;
+      color: white;
+      padding: 1.5rem 2rem;
+    }
+    .header-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 0;
+      object-fit: cover;
+    }
+    .header-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      margin-left: 15px;
+    }
+    .header-info h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .header-info p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    button.dark-mode-btn {
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      border: none;
+      background: #007BFF;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    button.dark-mode-btn:hover {
+      background: #0056b3;
+    }
+
+    /* ==== Sections ==== */
+    section {
+      padding: rem 10%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #007BFF;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* ==== Projects ==== */
+    .project {
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ==== Resume, Skills & Work ==== */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+    }
+    .job {
+      margin-bottom: 1.5rem;
+    }
+    .job h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #007BFF;
+    }
+    .job p {
+      margin: 0.3rem 0;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      background: #007BFF;
+      color: white;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+
+    /* ==== Footer ==== */
+    footer {
+      background: #4a6fa5;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* ==== Dark Mode ==== */
+    .dark-mode {
+      background: #121212;
+      color: #e0e0e0;
+    }
+    .dark-mode header,
+    .dark-mode footer {
+      background: #1c1c1c;
+    }
+    .dark-mode .project {
+      background: #1e1e1e;
+      border: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="mypic.jpg" alt="Rahima Yushawu" class="profile-pic">
+      <div class="header-info">
+        <h1>Rahima Yushawu</h1>
+        <p>IT Support | Data Analyst | Data Modeling | Marketing | Communication</p>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Work Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <button class="dark-mode-btn" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Analytically-driven IT and Data professional skilled in SQL, Python, and Power BI for data analysis, visualization, and generating actionable insights. Certified in Google Data Analytics and Microsoft Power BI. Seeking to apply technical and analytical skills to support data-driven business solutions.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Integrated Management System</h3>
+      <p>Designed a centralized MySQL database integrating HR, sales, and inventory data. Generated actionable reports with SQL queries. <a href="https://github.com/Himaht/IMS_PROJECT" target="_blank">View on GitHub</a></p>
+    </div>
+    <div class="project">
+      <h3>ThRivE</h3>
+      <p>A mental health and community resource platform created with HTML, CSS, and JavaScript. <a href="https://github.com/Himaht/ThRivE" target="_blank">View on GitHub</a></p>
+    </div>
+    <div class="project">
+      <h3>Linux/Bash Practice</h3>
+      <p>Completed exercises in command-line scripting and user permissions, demonstrating strong grasp of system processes. <a href="https://github.com/Himaht/Git-Bash-System_Engineering-devops" target="_blank">View on GitHub</a></p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="job">
+      <h3>Communications Intern | Minnesota State University Athletics | Mankato, MN</h3>
+      <p><em>Aug 2025 – Present</em></p>
+      <ul>
+        <li>Collaborated with a cross-functional team to manage event coverage schedules.</li>
+        <li>Utilized written and verbal communication to support gameday operations and digital content creation.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>IT Support (Part-Time) | Resolute Care | Mankato, MN</h3>
+      <p><em>Feb 2023 – Present</em></p>
+      <ul>
+        <li>Provided technical support for Windows systems, documenting service requests in a ticketing system.</li>
+        <li>Tracked and managed data with accuracy, supporting process improvements.</li>
+        <li>Collaborated with team members to resolve complex technical issues.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>IT Support | Civil Service Training Centre | Accra, Ghana</h3>
+      <p><em>Aug 2021 – Sep 2022</em></p>
+      <ul>
+        <li>Installed and maintained desktop systems, ensuring reliability and data integrity.</li>
+        <li>Managed user permissions and trained staff to enhance system usability and security.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Co-founder/Operations Director | Thrive Opportunities | Accra, Ghana</h3>
+      <p><em>Dec 2018 – Jan 2022</em></p>
+      <ul>
+        <li>Managed operations for a web-based platform focused on community well-being.</li>
+        <li>Led system updates and data documentation to ensure smooth functionality.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Customer Service Personnel | Robotz Ghana Limited | Accra, Ghana</h3>
+      <p><em>Sep 2018 – Aug 2019</em></p>
+      <ul>
+        <li>Delivered professional customer service while managing multiple priorities.</li>
+        <li>Maintained accurate records and handled transactions with attention to detail.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Core Skills</h2>
+    <ul>
+      <li><strong>Programming & Data Analysis:</strong> Python, R, SQL, MySQL, Statistics, Storytelling</li>
+      <li><strong>Data Visualization & Reporting:</strong> Power BI, Excel, Pivot Tables, VLOOKUP, Tableau</li>
+      <li><strong>Systems & IT Support:</strong> Windows OS, Hardware Diagnostics, Troubleshooting, Ticketing Systems, Networking, Agile Systems</li>
+      <li><strong>Soft Skills:</strong> Leadership, Communication, Mentorship, Problem-Solving, Multitasking</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Minnesota State University, Mankato</li>
+      <li>Bachelor of Science in Computer Information Technology, Minor in Marketing – Expected Dec 2026</li>
+      <li>GPA: 3.69 | Dean’s List Honoree</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Google Generative AI Learning Path – Jul 2025</li>
+      <li>Microsoft Data Analysis and Visualization with Power BI – Jun 2025</li>
+      <li>Google IT Support Professional Certificate – Jun 2024</li>
+      <li>Google Data Analytics Professional Certificate – Jun 2024</li>
+      <li>IBM Databases and SQL for Data Science with Python – May 2024</li>
+      <li>Edureka Snowflake Cloud Data Platform – May 2024</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yushawurahima@gmail.com">yushawurahima@gmail.com</a></p>
+    <p>Phone: 507-317-4901</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/heema2" target="_blank">LinkedIn</a></p>
+    <p>GitHub: <a href="https://github.com/Himaht" target="_blank">GitHub</a></p>
+    <p>Location: Mankato, Minnesota</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rahima Yushawu | Portfolio</p>
+  </footer>
+
+  <script>
+    function downloadResume() {
+      window.open("resume.pdf", "_blank");
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
